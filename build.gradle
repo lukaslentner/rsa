@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	api 'org.slf4j:slf4j-simple:1.7.33'
+	testImplementation 'junit:junit:4.12'
+}
