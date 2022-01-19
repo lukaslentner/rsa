@@ -6,7 +6,7 @@ import javax.xml.bind.DatatypeConverter;
 
 import org.junit.Test;
 
-import rsa.test.NumberTests;
+import rsa.test.BigIntegerTests;
 import rsa.test.StringTests;
 
 public class Main {
@@ -16,10 +16,10 @@ public class Main {
 		
 		// System.setProperty(org.slf4j.impl.SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "DEBUG");
 		
-		NumberTests.run("907", "773", "11", "4", Optional.of("688749"));
-		NumberTests.run("53", "59", "3", "89", Optional.of("1394"));
-		NumberTests.run("11", "13", "7", "9", Optional.of("48"));
-		NumberTests.run(
+		BigIntegerTests.run("907", "773", "11", "4", Optional.of("688749"));
+		BigIntegerTests.run("53", "59", "3", "89", Optional.of("1394"));
+		BigIntegerTests.run("11", "13", "7", "9", Optional.of("48"));
+		BigIntegerTests.run(
 			"12131072439211271897323671531612440428472427633701410925634549312301964373042085619324197365322416866541017057361365214171711713797974299334871062829803541",
 			"12027524255478748885956220793734512128733387803682075433653899983955179850988797899869146900809131611153346817050832096022160146366346391812470987105415233",
 			"65537",
@@ -28,8 +28,8 @@ public class Main {
 				"35052111338673026690212423937053328511880760811579981620642802346685810623109850235943049080973386241113784040794704193978215378499765413083646438784740952306932534945195080183861574225226218879827232453912820596886440377536082465681750074417459151485407445862511023472235560823053497791518928820272257787786"
 			)
 		);
-		NumberTests.run("1999", "2039", "65537", "113", Optional.of("3345792"));
-		NumberTests.run("1999", "2039", "65537", "947865", Optional.of("2621940"));
+		BigIntegerTests.run("1999", "2039", "65537", "113", Optional.of("3345792"));
+		BigIntegerTests.run("1999", "2039", "65537", "947865", Optional.of("2621940"));
 		
 	}
 	
