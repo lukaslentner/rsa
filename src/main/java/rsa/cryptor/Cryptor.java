@@ -22,7 +22,7 @@ public class Cryptor {
 		// m ≡ c^d mod n
 		
 		if (cipherText.compareTo(privateKey.getModulus()) != -1) {
-			throw new RuntimeException("Plain Text is not smaller than modulus");
+			throw new RuntimeException("Cipher Text is not smaller than modulus");
 		}
 		
 		return cipherText.modPow(privateKey.getExponent(), privateKey.getModulus());
